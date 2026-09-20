@@ -12,7 +12,8 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ================= NAVBAR ================= -->
+
     <header class="navbar">
 
         <a href="#home" class="logo">
@@ -20,14 +21,34 @@
         </a>
 
         <nav id="navMenu">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+
+            <a href="#home" class="active">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
         </nav>
 
-        <button class="menu-btn" id="menuBtn">
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Menu"
+        >
             ☰
         </button>
 
@@ -37,6 +58,7 @@
     <main>
 
         <!-- ================= HOME ================= -->
+
         <section id="home" class="hero section">
 
             <div class="hero-text">
@@ -58,7 +80,10 @@
                     pengembangan website dan teknologi.
                 </p>
 
-                <a href="#projects" class="btn">
+                <a
+                    href="#projects"
+                    class="btn"
+                >
                     Lihat Project
                     <span>→</span>
                 </a>
@@ -66,36 +91,51 @@
             </div>
 
 
+            <!-- FOTO UTAMA -->
+
             <div class="image-box hero-image">
 
                 <img
-    src="foto-utama.jpeg"
-    alt="Foto utama Arif Aulia"
->
+                    src="foto-utama.jpeg"
+                    alt="Foto Arif Aulia"
+                >
 
             </div>
 
         </section>
 
+
         <!-- ================= ABOUT ================= -->
-        <section id="about" class="section">
+
+        <section
+            id="about"
+            class="section"
+        >
 
             <div class="section-title">
+
                 <h2>
                     About Me
                 </h2>
+
             </div>
 
 
             <div class="about-grid">
 
+                <!-- FOTO PROFIL -->
+
                 <div class="image-box profile-image">
 
                     <img
-    src="foto-profil.jpeg"
-    alt="Foto Profil Arif Aulia"
->
+                        src="foto-profil.jpeg"
+                        alt="Foto Profil Arif Aulia"
+                    >
 
+                </div>
+
+
+                <!-- INFORMASI -->
 
                 <div class="about-content">
 
@@ -120,13 +160,17 @@
                         <p>
                             <strong>Profesi</strong>
                             <span>:</span>
-                            <span>Mahasiswa / Web Developer</span>
+                            <span>
+                                Mahasiswa / Web Developer
+                            </span>
                         </p>
 
                         <p>
                             <strong>Lokasi</strong>
                             <span>:</span>
-                            <span>Sigli</span>
+                            <span>
+                                Sigli
+                            </span>
                         </p>
 
                     </div>
@@ -139,18 +183,28 @@
 
 
         <!-- ================= SKILLS ================= -->
-        <section id="skills" class="section">
+
+        <section
+            id="skills"
+            class="section"
+        >
 
             <div class="section-title">
+
                 <h2>
                     Skills
                 </h2>
+
             </div>
 
 
             <div class="skills-grid">
 
+
+                <!-- HTML -->
+
                 <div class="skill-card">
+
                     <div class="skill-icon html-icon">
                         5
                     </div>
@@ -158,10 +212,14 @@
                     <h3>
                         HTML
                     </h3>
+
                 </div>
 
 
+                <!-- CSS -->
+
                 <div class="skill-card">
+
                     <div class="skill-icon css-icon">
                         3
                     </div>
@@ -169,10 +227,14 @@
                     <h3>
                         CSS
                     </h3>
+
                 </div>
 
 
+                <!-- JAVASCRIPT -->
+
                 <div class="skill-card">
+
                     <div class="skill-icon js-icon">
                         JS
                     </div>
@@ -180,10 +242,14 @@
                     <h3>
                         JavaScript
                     </h3>
+
                 </div>
 
 
+                <!-- PHP -->
+
                 <div class="skill-card">
+
                     <div class="skill-icon php-icon">
                         php
                     </div>
@@ -191,10 +257,14 @@
                     <h3>
                         PHP
                     </h3>
+
                 </div>
 
 
+                <!-- MYSQL -->
+
                 <div class="skill-card">
+
                     <div class="skill-icon db-icon">
                         ▤
                     </div>
@@ -202,6 +272,7 @@
                     <h3>
                         MySQL
                     </h3>
+
                 </div>
 
             </div>
@@ -210,26 +281,33 @@
 
 
         <!-- ================= PROJECTS ================= -->
-        <section id="projects" class="section">
+
+        <section
+            id="projects"
+            class="section"
+        >
 
             <div class="section-title">
+
                 <h2>
                     Projects
                 </h2>
+
             </div>
 
 
             <div class="projects-grid">
 
+
                 <!-- PROJECT 1 -->
+
                 <article class="project-card">
 
                     <div class="project-image">
 
                         <img
-                            src="assets/project-1.jpg"
+                            src="foto-utama.jpeg"
                             alt="Project 1"
-                            onerror="this.style.display='none'"
                         >
 
                     </div>
@@ -242,7 +320,10 @@
                         Website Portfolio
                     </p>
 
-                    <a href="#" class="detail-link">
+                    <a
+                        href="#"
+                        class="detail-link"
+                    >
                         Lihat Detail
                         <span>→</span>
                     </a>
@@ -251,14 +332,14 @@
 
 
                 <!-- PROJECT 2 -->
+
                 <article class="project-card">
 
                     <div class="project-image">
 
                         <img
-                            src="assets/project-2.jpg"
+                            src="foto-profil.jpeg"
                             alt="Project 2"
-                            onerror="this.style.display='none'"
                         >
 
                     </div>
@@ -271,7 +352,10 @@
                         Sistem Reservasi
                     </p>
 
-                    <a href="#" class="detail-link">
+                    <a
+                        href="#"
+                        class="detail-link"
+                    >
                         Lihat Detail
                         <span>→</span>
                     </a>
@@ -280,14 +364,14 @@
 
 
                 <!-- PROJECT 3 -->
+
                 <article class="project-card">
 
                     <div class="project-image">
 
                         <img
-                            src="assets/project-3.jpg"
+                            src="foto-utama.jpeg"
                             alt="Project 3"
-                            onerror="this.style.display='none'"
                         >
 
                     </div>
@@ -300,7 +384,10 @@
                         E-Commerce
                     </p>
 
-                    <a href="#" class="detail-link">
+                    <a
+                        href="#"
+                        class="detail-link"
+                    >
                         Lihat Detail
                         <span>→</span>
                     </a>
@@ -313,21 +400,31 @@
 
 
         <!-- ================= CONTACT ================= -->
-        <section id="contact" class="section">
+
+        <section
+            id="contact"
+            class="section"
+        >
 
             <div class="section-title">
+
                 <h2>
                     Contact
                 </h2>
+
             </div>
 
 
             <div class="contact-grid">
 
+
+                <!-- EMAIL -->
+
                 <a
-                    href="mailto:arifaulia1535@gmail.com"
+                    href="mailto:emailkamu@gmail.com"
                     class="contact-card"
                 >
+
                     <span class="contact-icon">
                         ✉
                     </span>
@@ -335,14 +432,18 @@
                     <span>
                         Email
                     </span>
+
                 </a>
 
 
+                <!-- INSTAGRAM -->
+
                 <a
-                    href="https://instagram.com/4ripp____"
+                    href="https://instagram.com/"
                     target="_blank"
                     class="contact-card"
                 >
+
                     <span class="contact-icon">
                         ◎
                     </span>
@@ -350,14 +451,18 @@
                     <span>
                         Instagram
                     </span>
+
                 </a>
 
 
+                <!-- GITHUB -->
+
                 <a
-                    href="https://github.com/arifaulia15"
+                    href="https://github.com/"
                     target="_blank"
                     class="contact-card"
                 >
+
                     <span class="contact-icon">
                         ●
                     </span>
@@ -365,6 +470,7 @@
                     <span>
                         GitHub
                     </span>
+
                 </a>
 
             </div>
@@ -375,6 +481,7 @@
 
 
     <!-- ================= FOOTER ================= -->
+
     <footer>
 
         © 2026 Arif Aulia
