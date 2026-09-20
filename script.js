@@ -3,10 +3,10 @@
 ===================================================== */
 
 const menuBtn = document.getElementById("menuBtn");
+
 const navMenu = document.getElementById("navMenu");
 
 
-// Ketika tombol menu diklik
 menuBtn.addEventListener("click", function () {
 
     navMenu.classList.toggle("show");
@@ -20,6 +20,7 @@ menuBtn.addEventListener("click", function () {
 
 const navLinks = document.querySelectorAll("#navMenu a");
 
+
 navLinks.forEach(function (link) {
 
     link.addEventListener("click", function () {
@@ -32,7 +33,7 @@ navLinks.forEach(function (link) {
 
 
 /* =====================================================
-   MENU AKTIF SESUAI SECTION
+   ACTIVE NAVIGATION
 ===================================================== */
 
 const sections = document.querySelectorAll("section[id]");
@@ -42,13 +43,17 @@ window.addEventListener("scroll", function () {
 
     let currentSection = "";
 
+
     sections.forEach(function (section) {
 
-        const sectionTop = section.offsetTop - 150;
+        const sectionTop =
+            section.offsetTop - 150;
+
 
         if (window.scrollY >= sectionTop) {
 
-            currentSection = section.getAttribute("id");
+            currentSection =
+                section.getAttribute("id");
 
         }
 
