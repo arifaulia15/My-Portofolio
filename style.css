@@ -15,7 +15,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #303238;
-    background-color: #ffffff;
+    background: #ffffff;
     line-height: 1.5;
 }
 
@@ -34,73 +34,59 @@ a {
     min-height: 80px;
 
     margin: 15px auto 0;
-
     padding: 14px 20px;
 
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-/* LOGO */
-
 .logo {
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
-    padding: 6px 22px;
+    padding: 7px 22px;
 
     font-size: 29px;
     font-weight: 700;
 }
 
-
-/* MENU */
-
 nav {
     display: flex;
     align-items: center;
-
-    gap: 12px;
+    gap: 10px;
 }
 
 nav a {
-    padding: 10px 18px;
+    padding: 10px 17px;
 
     font-weight: 700;
 
-    transition: 0.2s;
+    transition: 0.2s ease;
 }
-
-
-/* MENU AKTIF */
 
 nav a.active {
-    border: 2px solid #555;
-    background-color: #f4f4f4;
+    border: 2px solid #303238;
+    background: #f3f3f3;
 }
-
-
-/* HOVER MENU */
 
 nav a:hover {
-    border: 2px solid #555;
-    background-color: #f4f4f4;
+    border: 2px solid #303238;
+    background: #f3f3f3;
 }
 
 
-/* TOMBOL MENU HP */
+/* MENU MOBILE */
 
 .menu-btn {
     display: none;
 
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
-    background-color: white;
+    background: white;
 
-    font-size: 25px;
+    font-size: 24px;
 
     padding: 5px 10px;
 
@@ -117,8 +103,8 @@ main {
 
     margin: 0 auto;
 
-    border-left: 2px solid #555;
-    border-right: 2px solid #555;
+    border-left: 2px solid #303238;
+    border-right: 2px solid #303238;
 }
 
 
@@ -127,13 +113,15 @@ main {
 ===================================================== */
 
 .section {
-    padding: 25px 40px;
+    padding: 28px 40px;
 
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid #303238;
 }
 
 
-/* JUDUL SECTION */
+/* =====================================================
+   SECTION TITLE
+===================================================== */
 
 .section-title h2 {
     display: inline-block;
@@ -142,11 +130,8 @@ main {
 
     line-height: 1.1;
 
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
-
-
-/* GARIS BAWAH JUDUL */
 
 .section-title h2::after {
     content: "";
@@ -156,64 +141,73 @@ main {
     width: 45px;
     height: 4px;
 
-    background-color: #303238;
+    background: #303238;
 
     margin-top: 8px;
 }
 
 
 /* =====================================================
-   HOME / HERO
+   HOME
 ===================================================== */
 
 .hero {
-    min-height: 335px;
+    min-height: 350px;
 
     display: grid;
 
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 1fr 0.9fr;
 
-    gap: 45px;
+    gap: 55px;
 
     align-items: center;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 
-/* TEKS */
-
 .greeting {
     font-size: 27px;
-
-    margin-bottom: 0;
 }
 
 
 .hero h1 {
-    font-size: 58px;
+    font-size: 60px;
 
-    line-height: 1.05;
+    line-height: 1;
 
-    margin-bottom: 2px;
+    letter-spacing: -2px;
+
+    margin: 5px 0;
+
+    font-weight: 800;
 }
 
 
 .hero h2 {
     font-size: 28px;
 
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+
+    font-weight: 700;
 }
 
 
 .description {
-    max-width: 430px;
+    max-width: 450px;
 
-    font-size: 20px;
+    font-size: 19px;
 
-    margin-bottom: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 22px;
 }
 
 
-/* TOMBOL PROJECT */
+/* =====================================================
+   BUTTON
+===================================================== */
 
 .btn {
     display: inline-flex;
@@ -222,24 +216,22 @@ main {
 
     gap: 14px;
 
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
-    padding: 10px 24px;
+    padding: 11px 24px;
 
     font-weight: 700;
 
-    background-color: white;
+    background: white;
 
-    transition: 0.2s;
+    transition: 0.2s ease;
 }
 
-
 .btn:hover {
-    background-color: #303238;
+    background: #303238;
 
     color: white;
 }
-
 
 .btn span {
     font-size: 24px;
@@ -253,66 +245,20 @@ main {
 ===================================================== */
 
 .image-box {
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
     position: relative;
 
-    background-color: #fafafa;
-
     overflow: hidden;
+
+    background: #111;
 }
-
-
-/* FOTO UTAMA */
-
-.hero-image {
-    height: 265px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-}
-
-
-/*
-   GARIS SILANG PADA PLACEHOLDER
-*/
-
-.hero-image::before,
-.hero-image::after,
-.project-image::before,
-.project-image::after {
-    content: "";
-
-    position: absolute;
-
-    width: 140%;
-
-    height: 1px;
-
-    background-color: #aaa;
-
-    left: -20%;
-
-    top: 50%;
-
-    transform: rotate(32deg);
-}
-
-
-.hero-image::after,
-.project-image::after {
-    transform: rotate(-32deg);
-}
-
-
-/* FOTO */
 
 .image-box img {
     width: 100%;
     height: 100%;
+
+    display: block;
 
     object-fit: cover;
 
@@ -322,18 +268,35 @@ main {
 }
 
 
-/* TEKS PLACEHOLDER */
+/* =====================================================
+   FOTO UTAMA
+===================================================== */
 
-.placeholder {
-    position: absolute;
+.hero-image {
+    width: 100%;
 
-    z-index: 3;
+    height: 300px;
 
-    text-align: center;
+    border: 2px solid #303238;
 
-    background-color: rgba(250, 250, 250, 0.88);
+    overflow: hidden;
 
-    padding: 7px 12px;
+    background: #111;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 35%;
+
+    transition: transform 0.4s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.03);
 }
 
 
@@ -346,7 +309,7 @@ main {
 
     grid-template-columns: 300px 1fr;
 
-    gap: 45px;
+    gap: 55px;
 
     align-items: center;
 }
@@ -355,29 +318,39 @@ main {
 /* FOTO PROFIL */
 
 .profile-image {
-    height: 245px;
+    width: 100%;
 
-    display: flex;
+    height: 270px;
 
-    justify-content: center;
+    border: 2px solid #303238;
 
-    align-items: flex-end;
+    overflow: hidden;
+
+    background: #111;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 35%;
 }
 
 
-.profile-image .placeholder {
-    bottom: 12px;
-}
-
-
-/* TEKS ABOUT */
+/* ABOUT TEXT */
 
 .about-content {
-    border-left: 2px solid #555;
+    border-left: 2px solid #303238;
 
     padding-left: 45px;
 
     font-size: 18px;
+
+    line-height: 1.55;
+
+    max-width: 650px;
 }
 
 
@@ -387,13 +360,12 @@ main {
     margin-top: 22px;
 }
 
-
 .biodata p {
     display: grid;
 
     grid-template-columns: 100px 20px 1fr;
 
-    margin: 3px 0;
+    margin: 4px 0;
 }
 
 
@@ -410,12 +382,10 @@ main {
 }
 
 
-/* KOTAK SKILL */
-
 .skill-card {
-    min-height: 120px;
+    min-height: 125px;
 
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
     display: flex;
 
@@ -425,16 +395,29 @@ main {
 
     justify-content: center;
 
-    gap: 7px;
+    gap: 10px;
+
+    background: #fff;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
 }
 
+.skill-card:hover {
+    transform: translateY(-4px);
+
+    background: #f5f5f5;
+}
 
 .skill-card h3 {
     font-size: 17px;
 }
 
 
-/* ICON */
+/* =====================================================
+   SKILL ICON
+===================================================== */
 
 .skill-icon {
     height: 47px;
@@ -533,19 +516,29 @@ main {
 }
 
 
-/* KARTU PROJECT */
-
 .project-card {
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
     padding: 12px;
+
+    background: #fff;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 5px 5px 0 #303238;
 }
 
 
 /* FOTO PROJECT */
 
 .project-image {
-    height: 105px;
+    height: 125px;
 
     border: 2px solid #555;
 
@@ -553,27 +546,35 @@ main {
 
     overflow: hidden;
 
-    background-color: #fafafa;
+    background: #eee;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    position: relative;
+
+    z-index: 2;
 }
 
 
-/* JUDUL */
-
 .project-card h3 {
-    margin-top: 7px;
+    margin-top: 8px;
 
     font-size: 18px;
 }
-
-
-/* DESKRIPSI */
 
 .project-card p {
     font-size: 14px;
 }
 
 
-/* LINK DETAIL */
+/* DETAIL */
 
 .detail-link {
     display: inline-flex;
@@ -586,7 +587,6 @@ main {
 
     font-size: 14px;
 }
-
 
 .detail-link span {
     font-size: 24px;
@@ -608,37 +608,36 @@ main {
 }
 
 
-/* KARTU CONTACT */
-
 .contact-card {
-    min-height: 67px;
+    min-height: 72px;
 
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
     display: flex;
 
     align-items: center;
 
-    gap: 28px;
+    gap: 25px;
 
-    padding: 10px 22px;
+    padding: 12px 25px;
 
-    font-size: 22px;
+    font-size: 21px;
 
     font-weight: 700;
 
-    transition: 0.2s;
-}
+    background: #fff;
 
+    transition: 0.2s ease;
+}
 
 .contact-card:hover {
-    background-color: #303238;
+    background: #303238;
 
-    color: white;
+    color: #fff;
+
+    transform: translateY(-3px);
 }
 
-
-/* ICON CONTACT */
 
 .contact-icon {
     font-size: 32px;
@@ -654,25 +653,23 @@ footer {
 
     margin: 0 auto;
 
-    border: 2px solid #555;
+    border: 2px solid #303238;
 
     border-top: 0;
 
     text-align: center;
 
-    padding: 12px;
+    padding: 13px;
 
     font-weight: 700;
 }
 
 
 /* =====================================================
-   RESPONSIVE TABLET
+   TABLET
 ===================================================== */
 
 @media (max-width: 900px) {
-
-    /* MENU */
 
     .navbar {
         position: relative;
@@ -698,9 +695,9 @@ footer {
 
         gap: 0;
 
-        border: 2px solid #555;
+        border: 2px solid #303238;
 
-        background-color: white;
+        background: white;
     }
 
 
@@ -719,57 +716,74 @@ footer {
     }
 
 
-    /* HERO */
-
     .hero {
         grid-template-columns: 1fr;
+
+        gap: 30px;
     }
 
 
     .hero-image {
         order: -1;
+
+        height: 300px;
     }
 
-
-    /* SKILLS */
-
-    .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-
-    /* ABOUT */
 
     .about-grid {
         grid-template-columns: 1fr;
     }
 
 
+    .profile-image {
+        height: 300px;
+
+        max-width: 400px;
+    }
+
+
     .about-content {
         border-left: 0;
 
-        border-top: 2px solid #555;
+        border-top: 2px solid #303238;
 
         padding: 25px 0 0;
+
+        max-width: none;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
 
 
 /* =====================================================
-   RESPONSIVE HP
+   MOBILE
 ===================================================== */
 
 @media (max-width: 600px) {
 
-    /* SECTION */
+    .navbar {
+        width: calc(100% - 20px);
 
-    .section {
-        padding: 22px 18px;
+        min-height: 70px;
+
+        padding: 10px 12px;
     }
 
 
-    /* LOGO */
+    main {
+        width: calc(100% - 20px);
+    }
+
+
+    footer {
+        width: calc(100% - 20px);
+    }
+
 
     .logo {
         font-size: 22px;
@@ -778,10 +792,29 @@ footer {
     }
 
 
-    /* HERO */
+    .section {
+        padding: 24px 18px;
+    }
+
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+
+    .hero {
+        min-height: auto;
+
+        padding-top: 25px;
+
+        padding-bottom: 30px;
+    }
+
 
     .hero h1 {
         font-size: 43px;
+
+        letter-spacing: -1px;
     }
 
 
@@ -800,7 +833,15 @@ footer {
     }
 
 
-    /* GRID */
+    .hero-image {
+        height: 250px;
+    }
+
+
+    .profile-image {
+        height: 280px;
+    }
+
 
     .skills-grid,
     .projects-grid,
@@ -809,24 +850,18 @@ footer {
     }
 
 
-    /* FOTO */
-
-    .hero-image {
-        height: 220px;
+    .project-image {
+        height: 170px;
     }
 
-
-    /* BIODATA */
-
-    .biodata p {
-        grid-template-columns: 85px 15px 1fr;
-    }
-
-
-    /* CONTACT */
 
     .contact-card {
         font-size: 19px;
+    }
+
+
+    .biodata p {
+        grid-template-columns: 85px 15px 1fr;
     }
 
 }
